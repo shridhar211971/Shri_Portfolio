@@ -1,11 +1,9 @@
-import React from "react";
 import { Grid, Card, CardContent, Typography, Box, Avatar } from "@mui/material";
 import WorkIcon from "@mui/icons-material/Work";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
 // Import logos
 import Indi4logo from "../../assets/Company/indi4logo.png";
-import Indi4 from "../../assets/Company/indi4.png";
 import trivriddhi from "../../assets/Company/trivriddhi.png";
 import whitecopper from "../../assets/Company/whitecopper.png";
 
