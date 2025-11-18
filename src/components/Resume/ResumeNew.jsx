@@ -3,14 +3,8 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/Page/AnnotationLayer.css";
-import "react-pdf/dist/Page/TextLayer.css";
 
-// ✅ Correct worker for pdfjs 3.11.174
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`;
-
-// ✅ Load file from public/
+// 🔥 Replace react-pdf (not working on Vercel)
 const pdf = "/ShridharBhosale.pdf";
 
 function ResumeNew() {
@@ -38,31 +32,32 @@ function ResumeNew() {
         </Button>
       </Row>
 
-      {/* --- PDF Viewer --- */}
+      {/* --- PERFECT PDF VIEW --- */}
       <Row className="resume d-flex justify-content-center mt-4">
-        <Document
-          file={pdf}
-          onLoadError={(error) => console.error("❌ Error loading PDF:", error.message)}
-        >
-          <Page
-            pageNumber={1}
-            scale={width > 786 ? 1.5 : 0.7}
-            renderAnnotationLayer={false}
-            renderTextLayer={false}
-          />
-        </Document>
+        <iframe
+          src={pdf}
+          title="resume"
+          style={{
+      width: width > 1024 ? "750px" : width > 768 ? "85%" : "95%",
+      height: width > 768 ? "1100px" : "600px",
+      border: "none",
+      borderRadius: "10px",
+      background: "white",
+      boxShadow: "0 0 25px rgba(174,144,255,0.4)",
+    }}
+        ></iframe>
       </Row>
 
       {/* --- Bottom Download Button --- */}
       <Row style={{ justifyContent: "center", marginTop: "30px" }}>
-        <Button
+        {/* <Button
           variant="primary"
           href={pdf}
           target="_blank"
           style={{ maxWidth: "250px" }}
         >
           <AiOutlineDownload /> &nbsp;Download CV
-        </Button>
+        </Button> */}
       </Row>
     </Container>
   );
