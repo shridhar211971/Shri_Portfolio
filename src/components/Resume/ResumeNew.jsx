@@ -5,7 +5,8 @@ import Particle from "../Particle";
 import { AiOutlineDownload } from "react-icons/ai";
 
 // 🔥 Replace react-pdf (not working on Vercel)
-const pdf = "/ShridharBhosale.pdf";
+// const pdf = "/ShridharBhosale.pdf";
+ const pdf = "/ShridharResumeFullStackDev.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -38,13 +39,13 @@ function ResumeNew() {
           src={pdf}
           title="resume"
           style={{
-      width: width > 1024 ? "750px" : width > 768 ? "85%" : "95%",
+      width: width > 1024 ? "750px" : width > 768 ? "85%" : "100%",
       height: width > 768 ? "1100px" : "600px",
-      border: "none",
-      borderRadius: "10px",
-      background: "white",
-      boxShadow: "0 0 25px rgba(174,144,255,0.4)",
-    }}
+          border: "none",
+          borderRadius: "10px",
+          background: "white",
+          boxShadow: "0 0 25px rgba(174,144,255,0.4)",
+        }}
         ></iframe>
       </Row>
 

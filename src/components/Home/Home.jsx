@@ -52,7 +52,7 @@ function Home() {
       <Home2 />
 
       <Container>
-        <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
+        <Row style={{ paddingTop: "10px", paddingBottom: "40px" }}>
           <Col md={12} className="home-about-social text-center">
             <h1>Find Me On</h1>
             <p>
