@@ -12,15 +12,16 @@ function AboutCard() {
             from <span className="purple">Maharashtra, India</span>.
             <br />
             I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Indi4</span>.
-            <br />I hold an Integrated M.C.A. from{" "}
+            <span className="purple">Full Stack Developer</span> at{" "}
+            <span className="purple">Indi4</span>, where I build real-world applications and scalable systems.
+            <br />I completed my Bachelor of Computer Applications (BCA) from{" "}
             {/* <span className="purple">Mathematics and Computing</span> from{" "} */}
-            <span className="purple">VCK Kolhapur</span>.
+            <span className="purple">VCK Kolhapur</span> and am currently pursuing my Master of 
+            Computer Applications (MCA) from{" "}
+            <span className="purple">D Y Patil University, Pune</span>, alongside my job.
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            Outside of coding, I enjoy activities that keep me creative and energized:
           </p>
 
           <ul>
@@ -28,15 +29,15 @@ function AboutCard() {
               <ImPointRight /> Playing Ground Games 🎮
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Poems ✍️
+              <ImPointRight /> Writing and exploring creative ideas (Poems)✍️
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight /> Traveling and discovering new places 🌍
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "I believe in building impactful solutions and continuously improving my skills to grow as a developer.!"{" "}
           </p>
           <footer className="blockquote-footer">Shridhar</footer>
         </blockquote>
