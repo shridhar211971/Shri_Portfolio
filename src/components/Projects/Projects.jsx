@@ -6,6 +6,8 @@ import SmartInventory_shopping from "../../assets/Projects/SmartInventory_shoppi
 import manufacturing_inventory from "../../assets/Projects/manufacturing_inventory.png"
 import Machine_Curd_App from "../../assets/Projects/Machine_Curd_App.png"
 import pm from "../../assets/Projects/pm.png"
+import andonX from "../../assets/Projects/andonX.jpeg"
+import kn from "../../assets/Projects/KN.jpeg"
 
 function Projects() {
   return (
@@ -72,7 +74,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={SmartInventory_shopping}
+              imgPath={andonX}
               isBlog={false}
               title=" AndonX Multitenant System"
               description="Developed a real-time manufacturing monitoring system with multi-tenant architecture and role-based
@@ -84,7 +86,7 @@ access control and Andon ticketing system for issue tracking and resolution and 
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={manufacturing_inventory}
+              imgPath={kn}
               isBlog={false}
               title="KN Line Stoppage Intimation System"
               description="Built a real-time system to monitor and manage production line stoppages, downtime, and ticket
